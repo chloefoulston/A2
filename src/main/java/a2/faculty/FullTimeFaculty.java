@@ -8,6 +8,10 @@ public class FullTimeFaculty extends FacultyMember{
         super(employeeId, name, baseSalary);
         this.teachingAllowance = teachingAllowance;
     }
+    public FullTimeFaculty(FullTimeFaculty other) {
+        super(other);
+        this.teachingAllowance = other.teachingAllowance;
+    }
 
     @Override
     public double calculatePay() {

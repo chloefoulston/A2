@@ -7,6 +7,10 @@ public class PartTimeFaculty extends FacultyMember{
         super(employeeId, name, baseSalary);
         this.sessionAllowance = sessionAllowance;
     }
+    public PartTimeFaculty(PartTimeFaculty other) {
+        super(other);
+        this.sessionAllowance = other.sessionAllowance;
+    }
 
     @Override
     public double calculatePay() {

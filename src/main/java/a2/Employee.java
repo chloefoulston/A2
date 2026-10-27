@@ -1,5 +1,5 @@
 package a2;
-public abstract class Employee {
+public abstract class Employee implements Comparable<Employee>{
     private String employeeId;
     private String name;
     private double baseSalary;
@@ -66,5 +66,10 @@ public abstract class Employee {
         }
         Employee other = (Employee) obj;
         return employeeId.equals(other.employeeId);
+    }
+    // Part 5 — Natural ordering with Comparable
+    @Override
+    public int compareTo(Employee other) {
+        return this.employeeId.compareTo(other.employeeId);
     }
 }

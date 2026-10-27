@@ -7,4 +7,8 @@ public abstract class Manager extends Employee {
     public Manager(String employeeId, String name, double baseSalary) {
         super(employeeId, name, baseSalary);
     }
+
+    public Manager(Manager other) {
+        super(other);
+    }
 }
