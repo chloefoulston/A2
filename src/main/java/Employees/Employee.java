@@ -14,7 +14,7 @@ public abstract class Employee {
 
     //Default Constructor
     public Employee(){
-        this(0,"",0.0);
+        this("","",0.0);
     }
 
     //Copy Constructor
@@ -23,7 +23,7 @@ public abstract class Employee {
     }
 
     // Getters
-    public int getEmployeeId() {
+    public String getEmployeeId() {
         return employeeId;
     }
 
@@ -68,6 +68,4 @@ public abstract class Employee {
         Employee other = (Employee) obj;
         return employeeId.equals(other.employeeId);
     }
-
-
 }

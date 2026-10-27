@@ -1,7 +1,6 @@
 package Employees;
 
 public class DepartmentManager extends Manager {
-
     private String department;
 
     public DepartmentManager(String employeeId, String name, double baseSalary, String department) {
