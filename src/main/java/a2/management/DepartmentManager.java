@@ -4,9 +4,20 @@ import a2.interfaces.BonusEligible;
 public class DepartmentManager extends Manager implements BonusEligible {
     private String department;
 
+
+    public DepartmentManager() {
+        super();
+        this.department = "";
+    }
+
     public DepartmentManager(String employeeId, String name, double baseSalary, String department) {
         super(employeeId, name, baseSalary);
         this.department = department;
+    }
+
+    public DepartmentManager(DepartmentManager other) {
+        super(other);
+        this.department = other.department;
     }
 
     @Override
@@ -19,8 +30,5 @@ public class DepartmentManager extends Manager implements BonusEligible {
         return getBaseSalary() * 0.05;
     }
 
-    public DepartmentManager(DepartmentManager other) {
-        super(other);
-        this.department = other.department;
-    }
+
 }

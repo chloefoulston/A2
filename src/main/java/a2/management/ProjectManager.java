@@ -4,6 +4,11 @@ import a2.interfaces.BonusEligible;
 public class ProjectManager extends Manager implements BonusEligible{
     private String projectName;
 
+    public ProjectManager() {
+        super();
+        this.projectName = "";
+    }
+
     public ProjectManager(String employeeId, String name, double baseSalary, String projectName) {
         super(employeeId, name, baseSalary);
         this.projectName = projectName;

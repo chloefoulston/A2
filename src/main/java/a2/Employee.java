@@ -4,16 +4,16 @@ public abstract class Employee implements Comparable<Employee>{
     private String name;
     private double baseSalary;
 
+    //Default Constructor
+    public Employee(){
+        this("","",0.0);
+    }
+
     // Parameterized Constructor
     public Employee(String employeeId, String name, double baseSalary) {
         this.employeeId = employeeId;
         this.name = name;
         this.baseSalary = baseSalary;
-    }
-
-    //Default Constructor
-    public Employee(){
-        this("","",0.0);
     }
 
     //Copy Constructor
