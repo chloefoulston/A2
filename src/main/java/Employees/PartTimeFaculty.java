@@ -1,0 +1,20 @@
+package Employees;
+
+public class PartTimeFaculty extends FacultyMember{
+    private double sessionAllowance;
+
+    public PartTimeFaculty(String employeeId, String name, double baseSalary, double sessionAllowance) {
+        super(employeeId, name, baseSalary);
+        this.sessionAllowance = sessionAllowance;
+    }
+
+    @Override
+    public double calculatePay() {
+        return getBaseSalary() + sessionAllowance;
+    }
+
+    public double getSessionAllowance() {
+        return sessionAllowance;
+    }
+
+}
