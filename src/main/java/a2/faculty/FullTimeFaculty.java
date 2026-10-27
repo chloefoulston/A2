@@ -1,4 +1,4 @@
-package Employees;
+package a2.faculty;
 
 public class FullTimeFaculty extends FacultyMember{
 

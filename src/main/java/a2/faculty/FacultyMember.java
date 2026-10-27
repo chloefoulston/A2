@@ -1,4 +1,5 @@
-package Employees;
+package a2.faculty;
+import a2.Employee;
 
 public abstract class FacultyMember extends Employee {
 

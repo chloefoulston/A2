@@ -1,4 +1,4 @@
-package Employees;
+package a2.management;
 
 public class DepartmentManager extends Manager {
     private String department;

@@ -1,5 +1,4 @@
-package Employees;
-import java.util.Objects;
+package a2;
 public abstract class Employee {
     private String employeeId;
     private String name;

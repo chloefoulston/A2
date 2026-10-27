@@ -1,4 +1,6 @@
-package Employees;
+package a2.management;
+import a2.Employee;
+
 
 public abstract class Manager extends Employee {
 
