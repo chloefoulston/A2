@@ -1,4 +1,4 @@
-//Chloe Fouslton 2368100
+//Chloe Foulston
 // Nathan Garcia
 package a2;
 import a2.management.DepartmentManager;
